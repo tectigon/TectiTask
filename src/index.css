@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.main .sidebarWrapper {
+  height: 100vh;
+}
+
+.main .sidebarWrapper .sidebar {
+  height: 100vh;
+}
+.main .sidebarWrapper .sidebar .nav-btn {
+  position: absolute;
+  top: 1rem;
+  left: 15rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: orange;
+  padding: 4px 12px;
+  font-weight: bold;
+}
+
+.main .sidebarWrapper .sidebar .sidebarTabs button {
+  justify-content: flex-start !important;
+  color: white;
+  letter-spacing: 0.8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-top: 14px;
+  position: relative;
+}
+.main .sidebarWrapper .sidebar .sidebarTabs ul {
+  width: 100%;
+  margin-bottom: 0px;
+}
+.main .sidebarWrapper .sidebar .sidebarTabs ul li {
+  list-style: none;
+  width: 100%;
+  left: 0;
+}
+
+.main .sidebarWrapper .sidebar .sidebarTabs button:hover {
+  background-color: rgba(128, 128, 128, 0.208);
+}
+.main .sidebarWrapper .sidebar .sidebarTabs button::before {
+  content: "";
+  width: 4px;
+  height: 50%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: orange;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+.main .sidebarWrapper .sidebar .sidebarTabs button:hover::before,
+.main .sidebarWrapper .sidebar .sidebarTabs button.active::before {
+  top: 0;
+  height: 100%;
+  opacity: 1;
+}
+.main .sidebarWrapper .sidebar .sidebarTabs button.active,
+.main .sidebarWrapper .sidebar .sidebarTabs button.active {
+  background-color: orange;
+}
+.main .sidebarWrapper .sidebar .sidebarTabs li {
+  position: relative;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  height: auto;
+}
+
+.main .sidebarWrapper .sidebar .sidebarTabs li .submenu {
+  position: relative;
+  top: 100%;
+  left: 0;
+  transition: 0.3s ease-in-out;
+  /* opacity: 0; */
+}
+.main .sidebarWrapper .sidebar .sidebarTabs li .colapsed .submenu {
+  opacity: 1;
+  height: auto;
+  color: white;
+}
+.main .sidebarWrapper .sidebar .sidebarTabs li .submenu button {
+  padding: 4px 30px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.main .sidebarWrapper .sidebar .sidebarTabs li .submenu button::before {
+  display: none;
+}
+
+.main .sidebarWrapper .sidebar .sidebarTabs li .submenu button::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 49%;
+  left: 3%;
+  background-color: orange;
+}

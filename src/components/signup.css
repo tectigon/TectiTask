@@ -1,0 +1,44 @@
+.signup-header {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.signup-header .content {
+  width: 80%;
+  margin: auto;
+}
+.signup-header .content .logo h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.signup-header .content .logo h3 span {
+  color: orange;
+}
+
+.signupContainer {
+  /* background-color: #121212; */
+  min-height: calc(100vh-10vh);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.signup-item {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  margin: auto;
+  gap: 1rem;
+}
+
+.signup-content h4 {
+  font-size: 1.5rem;
+}
+.signup-content h5 {
+  font-size: 1.5rem;
+}
+.signup-content p {
+  font-size: 14px;
+}
+.signup-content input {
+  font-size: 14px;
+}
